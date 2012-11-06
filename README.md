@@ -1,2 +1,2 @@
-guildcraft
+GuildCraft
 ==========
