@@ -3,12 +3,23 @@
 // Results
 article {
   border: 1px solid #ccc;
+  float: left;
   margin: 20px;
   padding: 10px;
+  width: 600px;
   li {
     padding: 5px 0;
   }
   .count {
     @include font-size(19);
   }
+}
+
+// Workbench
+#workbench {
+  border: 1px solid #ccc;
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
 }
