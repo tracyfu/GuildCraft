@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>GuildCraft</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'http://static-ascalon.cursecdn.com/current/js/syndication/tt.js' %>
 </body>
 </html>

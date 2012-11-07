@@ -1,0 +1,29 @@
+@import 'scss';
+
+a {
+  text-decoration: none;
+}
+
+.legendary {
+  color: $legendary;
+}
+
+.exotic {
+  color: $exotic;
+}
+
+.rare {
+  color: $rare;
+}
+
+.fine {
+  color: $fine;
+}
+
+.common {
+  color: $common;
+}
+
+.junk {
+  color: $junk;
+}
