@@ -1,2 +1,7 @@
 $body-font: .8125;
 $baseline-font: $body-font * 16;
+
+// Utilities
+@mixin font-size($px, $baseline: $baseline-font) {
+  font-size: ($px / $baseline) + em;
+}

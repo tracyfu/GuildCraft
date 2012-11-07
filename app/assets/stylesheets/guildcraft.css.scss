@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 .legendary {
   color: $legendary;
 }
@@ -24,8 +28,8 @@ a {
   color: $fine;
 }
 
-.common {
-  color: $common;
+.basic {
+  color: $basic;
 }
 
 .junk {
