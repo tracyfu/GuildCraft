@@ -1,5 +1,9 @@
 @import 'scss';
 
+body {
+  font-size: $body-font * 100%;
+}
+
 a {
   text-decoration: none;
 }
