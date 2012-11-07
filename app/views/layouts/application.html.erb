@@ -6,8 +6,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
-  <%= render 'layouts/footer' %>
+  <div id="wrapper">
+    <%= render 'layouts/header' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'http://static-ascalon.cursecdn.com/current/js/syndication/tt.js' %>
 </body>
