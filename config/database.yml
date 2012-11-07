@@ -1,8 +1,0 @@
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: guildcraft_development
-  pool: 5
-  username: postgres
-  password: bunniesareboss
-  host: localhost
