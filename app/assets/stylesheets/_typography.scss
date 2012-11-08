@@ -6,8 +6,12 @@ $baseline-font: $body-font * 16;
   font-family: 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif;
 }
 
+@mixin serif {
+  font-family: Georgia, Times, 'Times New Roman', serif;;
+}
+
 @font-face {
-  font-family: 'Cronos Pro Regular';
+  font-family: 'Cronos Pro';
   font-style: normal;
   font-weight: normal;
   src: font-url('cronospro-regular-webfont.eot');
@@ -18,7 +22,7 @@ $baseline-font: $body-font * 16;
 }
 
 @font-face {
-  font-family: 'Cronos Pro Semibold';
+  font-family: 'Cronos Pro';
   font-style: normal;
   font-weight: bold;
   src: font-url('cronospro-semibold-webfont.eot');
@@ -29,7 +33,7 @@ $baseline-font: $body-font * 16;
 }
 
 @font-face {
-  font-family: 'Cronos Pro Italic';
+  font-family: 'Cronos Pro';
   font-style: italic;
   font-weight: normal;
   src: font-url('cronospro-italic-webfont.eot');
@@ -40,7 +44,7 @@ $baseline-font: $body-font * 16;
 }
 
 @font-face {
-  font-family: 'Eason Pro Regular';
+  font-family: 'Eason Pro';
   font-style: normal;
   font-weight: normal;
   src: font-url('easonpro-regular-webfont.eot');
@@ -51,7 +55,7 @@ $baseline-font: $body-font * 16;
 }
 
 @font-face {
-  font-family: 'Eason Pro Bold';
+  font-family: 'Eason Pro';
   font-style: normal;
   font-weight: bold;
   src: font-url('easonpro-bold-webfont.eot');
@@ -62,7 +66,7 @@ $baseline-font: $body-font * 16;
 }
 
 @font-face {
-  font-family: 'Eason Pro Italic';
+  font-family: 'Eason Pro';
   font-style: italic;
   font-weight: normal;
   src: font-url('easonpro-italic-webfont.eot');
@@ -72,37 +76,14 @@ $baseline-font: $body-font * 16;
        font-url('easonpro-italic-webfont.svg#EasonProItalic') format('svg');
 }
 
-@mixin cronos-pro-regular {
+@mixin cronos-pro {
   @include sans-serif;
-  font-family: 'Cronos Pro Regular';
-  font-weight: normal;
+  font-family: 'Cronos Pro';
 }
 
-@mixin cronos-pro-semibold {
-  @include sans-serif;
-  font-family: 'Cronos Pro Semibold';
-  font-weight: bold;
-}
-
-@mixin cronos-pro-italic {
-  @include sans-serif;
-  font-family: 'Cronos Pro Italic';
-  font-weight: normal;
-}
-
-@mixin eason-pro-regular {
-  font-family: 'Eason Pro Regular';
-  font-weight: normal;
-}
-
-@mixin eason-pro-semibold {
-  font-family: 'Eason Pro Semibold';
-  font-weight: bold;
-}
-
-@mixin eason-pro-italic {
-  font-family: 'Eason Pro Italic';
-  font-weight: normal;
+@mixin eason-pro {
+  @include serif;
+  font-family: 'Eason Pro';
 }
 
 // Utilities

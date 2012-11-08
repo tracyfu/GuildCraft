@@ -1,11 +1,12 @@
 @import 'scss';
 
 body {
-  @include cronos-pro-regular;
+  font-family: 'Cronos Pro';
   font-size: $body-font * 100%;
 }
 
 a {
+  color: $red;
   text-decoration: none;
 }
 

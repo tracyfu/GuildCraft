@@ -1,108 +1,170 @@
 <article>
   <%= link_to 'Add to Workbench', '/' %>
-  <ul>
-    <li>
-      <div>
-        <span class="count"><input maxlength="5" size="3" value="1"></span>
-        <h1>
-          <%= link_to 'http://www.gw2db.com/recipes/7133-berserkers-draconic-helm', class: 'exotic' do %>
-            <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/730/56/56/61565.png' %>
-          <% end %>
-        </h1>
-        <%= image_tag 'http://wiki.guildwars2.com/images/3/32/Armorsmith_tango_icon_20px.png' %> Armorsmith(400)
-      </div>
-      <ul>
-        <li>
-          <%= link_to 'http://www.gw2db.com/items/57247-berserkers-intricate-gossamer-insignia-s', class: 'exotic' do %>
-            <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/118/969/36/36/434358.png' %>
-          <% end %>
-          <span class="count">1</span>
-          <ul>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/3834-bolt-s-of-gossamer', class: 'basic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/988/36/36/63577.png' %>
-              <% end %>
-              <span class="count">5</span>
-              <ul>
-                <li>
-                  <%= link_to 'http://www.gw2db.com/items/3833-gossamer-scrap-s', class: 'basic' do %>
-                    <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/117/962/36/36/340417.png' %>
-                  <% end %>
-                  <span class="count">10</span>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/24546-spool-s-of-gossamer-thread', class: 'basic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/986/36/36/65959.png' %>
-              <% end %>
-              <span class="count">20</span>
-            </li>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/19736-vial-s-of-powerful-blood', class: 'fine' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/114/461/36/36/66950.png' %>
-              <% end %>
-              <span class="count">5</span>
-            </li>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/3503-glob-s-of-ectoplasm', class: 'exotic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/962/36/36/65941.png' %>
-              <% end %>
-              <span class="count">5</span>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <%= link_to 'http://www.gw2db.com/items/56318-orichalcum-helmet-casing-s', class: 'basic' do %>
-            <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/115/379/36/36/219606.png' %>
-          <% end %>
-          <span class="count">1</span>
-          <ul>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/534-orichalcum-ingot-s', class: 'basic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/929/36/36/220460.png' %>
-              <% end %>
-              <span class="count">1</span>
-              <ul>
-                <li>
-                  <%= link_to 'http://www.gw2db.com/items/654-orichalcum-ore', class: 'basic' do %>
-                    <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/945/36/36/220461.png' %>
-                  <% end %>
-                  <span class="count">2</span>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <%= link_to 'http://www.gw2db.com/items/56317-orichalcum-helmet-lining-s', class: 'basic' do %>
-            <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/115/378/36/36/219605.png' %>
-          <% end %>
-          <span class="count">1</span>
-          <ul>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/3834-bolt-s-of-gossamer', class: 'basic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/988/36/36/63577.png' %>
-              <% end %>
-              <span class="count">2</span>
-              <ul>
-                <li>
-                  <%= link_to 'http://www.gw2db.com/items/3833-gossamer-scrap-s', class: 'basic' do %>
-                    <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/117/962/36/36/340417.png' %>
-                  <% end %>
-                  <span class="count">4</span>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <%= link_to 'http://www.gw2db.com/items/24546-spool-s-of-gossamer-thread', class: 'basic' do %>
-                <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/986/36/36/65959.png' %>
-              <% end %>
-              <span class="count">1</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <header>
+    <div class="count"><input maxlength="5" size="3" value="1"></div>
+    <h1>
+      <%= link_to 'http://www.gw2db.com/recipes/7133-berserkers-draconic-helm', class: 'exotic' do %>
+        <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/730/56/56/61565.png', class: 'icon' %> Berserker's Draconic Helm
+      <% end %>
+    </h1>
+    <%= image_tag 'http://wiki.guildwars2.com/images/3/32/Armorsmith_tango_icon_20px.png' %> Armorsmith(400)
+  </header>
+  <section>
+    <h1>Recipe</h1>
+    <ul class="materials">
+      <li>
+        <%= link_to 'http://www.gw2db.com/items/57247-berserkers-intricate-gossamer-insignia-s', class: 'exotic' do %>
+          <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/118/969/36/36/434358.png', class: 'icon' %>
+        <% end %>
+        <div class="count">1</div>
+        <ul>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/3834-bolt-s-of-gossamer', class: 'basic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/988/36/36/63577.png', class: 'icon' %>
+            <% end %>
+            <div class="count">5</div>
+            <ul>
+              <li>
+                <%= link_to 'http://www.gw2db.com/items/3833-gossamer-scrap-s', class: 'basic' do %>
+                  <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/117/962/36/36/340417.png', class: 'icon' %>
+                <% end %>
+                <div class="count">10</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/24546-spool-s-of-gossamer-thread', class: 'basic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/986/36/36/65959.png', class: 'icon' %>
+            <% end %>
+            <div class="count">20</div>
+          </li>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/19736-vial-s-of-powerful-blood', class: 'fine' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/114/461/36/36/66950.png', class: 'icon' %>
+            <% end %>
+            <div class="count">5</div>
+          </li>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/3503-glob-s-of-ectoplasm', class: 'exotic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/962/36/36/65941.png', class: 'icon' %>
+            <% end %>
+            <div class="count">5</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <%= link_to 'http://www.gw2db.com/items/56318-orichalcum-helmet-casing-s', class: 'basic' do %>
+          <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/115/379/36/36/219606.png', class: 'icon' %>
+        <% end %>
+        <div class="count">1</div>
+        <ul>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/534-orichalcum-ingot-s', class: 'basic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/929/36/36/220460.png', class: 'icon' %>
+            <% end %>
+            <div class="count">1</div>
+            <ul>
+              <li>
+                <%= link_to 'http://www.gw2db.com/items/654-orichalcum-ore', class: 'basic' do %>
+                  <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/945/36/36/220461.png', class: 'icon' %>
+                <% end %>
+                <div class="count">2</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <%= link_to 'http://www.gw2db.com/items/56317-orichalcum-helmet-lining-s', class: 'basic' do %>
+          <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/115/378/36/36/219605.png', class: 'icon' %>
+        <% end %>
+        <div class="count">1</div>
+        <ul>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/3834-bolt-s-of-gossamer', class: 'basic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/988/36/36/63577.png', class: 'icon' %>
+            <% end %>
+            <div class="count">2</div>
+            <ul>
+              <li>
+                <%= link_to 'http://www.gw2db.com/items/3833-gossamer-scrap-s', class: 'basic' do %>
+                  <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/117/962/36/36/340417.png', class: 'icon' %>
+                <% end %>
+                <div class="count">4</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <%= link_to 'http://www.gw2db.com/items/24546-spool-s-of-gossamer-thread', class: 'basic' do %>
+              <%= image_tag 'http://media-ascalon.cursecdn.com/avatars/thumbnails/113/986/36/36/65959.png', class: 'icon' %>
+            <% end %>
+            <div class="count">1</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h1>Materials</h1>
+    <table>
+      <tr>
+        <td><%= link_to 'Glob[s] of Ectoplasm', '/', class: 'exotic' %></td>
+        <td><span class="count">5</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Vial[s] of Powerful Blood', '/', class: 'fine' %></td>
+        <td><span class="count">5</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Orichalcum Ore', '/', class: 'basic' %></td>
+        <td><span class="count">2</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Spool[s] of Gossamer Thread', '/', class: 'basic' %></td>
+        <td><span class="count">21</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Gossamer Scrap[s]', '/', class: 'basic' %></td>
+        <td><span class="count">14</span></td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h1>Calculator</h1>
+    <table>
+      <tr>
+        <td><%= link_to 'Glob[s] of Ectoplasm', '/', class: 'exotic' %></td>
+        <td><span class="count">5</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Vial[s] of Powerful Blood', '/', class: 'fine' %></td>
+        <td><span class="count">5</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Orichalcum Ore', '/', class: 'basic' %></td>
+        <td><span class="count">2</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Spool[s] of Gossamer Thread', '/', class: 'basic' %></td>
+        <td><span class="count">21</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Gossamer Scrap[s]', '/', class: 'basic' %></td>
+        <td><span class="count">14</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+        <td><span class="silver">2</span> <span class="copper">36</span></td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h1>Acquisition</h1>
+  </section>
 </article>

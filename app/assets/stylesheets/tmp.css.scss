@@ -1,46 +1,83 @@
 @import 'scss';
 
+h1 {
+  @include eason-pro;
+  @include font-size(32);
+  @include hr;
+  background-repeat: repeat-x;
+  font-weight: normal;
+  padding: 60px 0 30px;
+}
+
+table {
+  margin-bottom: 30px;
+  td {
+    padding: 5px;
+    text-align: right;
+    &:first-child {
+      text-align: left;
+      width: 200px;
+    }
+  }
+}
+
 #wrapper {
+  @include clearfix;
   margin: 0 auto;
-  width: 984px;
+  width: 1200px;
+}
+
+.copper {
+  @include copper;
+}
+
+.silver {
+  @include silver;
+}
+
+.gold {
+  @include gold;
 }
 
 // Results
 article {
-  border: 1px solid #ccc;
   float: left;
   margin: 10px;
   padding: 10px;
   width: 600px;
-  img {
+  .icon {
     @include icon-background;
+    display: block;
     height: 33px;
     width: 33px;
   }
-  ul {
-    @include clearfix;
+  .count {
+    color: #666;
+    &::before {
+      content: 'x';
+    }
+  }
+  .materials {
     text-align: center;
-    width: 600px;
-    ul ul {
-      border: 1px solid #ccc;
-      width: 190px;
+    a {
+      display: inline-block;
+    }
+    li {
+      display: table-cell;
+      padding: 10px;
+    }
+    > li {
+      border-left: 1px solid #ccc;
+      &:first-child {
+        border: 0;
+      }
       li {
-        width: 45px;
-        border: 1px solid #ccc;
-        ul, ul li {
-          border: 0;
+        width: 47px;
+        li {
+          padding: 10px 0;
         }
       }
     }
-  }
-  li {
-    float: left;
-    margin: 5px;
-    padding: 5px 0;
-    width: 190px;
-  }
-  .count {
-    @include font-size(19);
   }
 }
 
