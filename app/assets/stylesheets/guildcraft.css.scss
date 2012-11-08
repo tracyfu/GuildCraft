@@ -1,6 +1,7 @@
 @import 'scss';
 
 body {
+  @include cronos-pro-regular;
   font-size: $body-font * 100%;
 }
 

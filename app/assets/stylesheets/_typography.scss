@@ -1,5 +1,109 @@
-$body-font: .8125;
+$body-font: 1;
 $baseline-font: $body-font * 16;
+
+// Fonts
+@mixin sans-serif {
+  font-family: 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: 'Cronos Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: font-url('cronospro-regular-webfont.eot');
+  src: font-url('cronospro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('cronospro-regular-webfont.woff') format('woff'),
+       font-url('cronospro-regular-webfont.ttf') format('truetype'),
+       font-url('cronospro-regular-webfont.svg#CronosProRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Cronos Pro Semibold';
+  font-style: normal;
+  font-weight: bold;
+  src: font-url('cronospro-semibold-webfont.eot');
+  src: font-url('cronospro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('cronospro-semibold-webfont.woff') format('woff'),
+       font-url('cronospro-semibold-webfont.ttf') format('truetype'),
+       font-url('cronospro-semibold-webfont.svg#CronosSemibold') format('svg');
+}
+
+@font-face {
+  font-family: 'Cronos Pro Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: font-url('cronospro-italic-webfont.eot');
+  src: font-url('cronospro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('cronospro-italic-webfont.woff') format('woff'),
+       font-url('cronospro-italic-webfont.ttf') format('truetype'),
+       font-url('cronospro-italic-webfont.svg#CronosProItalic') format('svg');
+}
+
+@font-face {
+  font-family: 'Eason Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: font-url('easonpro-regular-webfont.eot');
+  src: font-url('easonpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('easonpro-regular-webfont.woff') format('woff'),
+       font-url('easonpro-regular-webfont.ttf') format('truetype'),
+       font-url('easonpro-regular-webfont.svg#EasonProRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Eason Pro Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: font-url('easonpro-bold-webfont.eot');
+  src: font-url('easonpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('easonpro-bold-webfont.woff') format('woff'),
+       font-url('easonpro-bold-webfont.ttf') format('truetype'),
+       font-url('easonpro-bold-webfont.svg#EasonProBold') format('svg');
+}
+
+@font-face {
+  font-family: 'Eason Pro Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: font-url('easonpro-italic-webfont.eot');
+  src: font-url('easonpro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('easonpro-italic-webfont.woff') format('woff'),
+       font-url('easonpro-italic-webfont.ttf') format('truetype'),
+       font-url('easonpro-italic-webfont.svg#EasonProItalic') format('svg');
+}
+
+@mixin cronos-pro-regular {
+  @include sans-serif;
+  font-family: 'Cronos Pro Regular';
+  font-weight: normal;
+}
+
+@mixin cronos-pro-semibold {
+  @include sans-serif;
+  font-family: 'Cronos Pro Semibold';
+  font-weight: bold;
+}
+
+@mixin cronos-pro-italic {
+  @include sans-serif;
+  font-family: 'Cronos Pro Italic';
+  font-weight: normal;
+}
+
+@mixin eason-pro-regular {
+  font-family: 'Eason Pro Regular';
+  font-weight: normal;
+}
+
+@mixin eason-pro-semibold {
+  font-family: 'Eason Pro Semibold';
+  font-weight: bold;
+}
+
+@mixin eason-pro-italic {
+  font-family: 'Eason Pro Italic';
+  font-weight: normal;
+}
 
 // Utilities
 @mixin font-size($px, $baseline: $baseline-font) {
